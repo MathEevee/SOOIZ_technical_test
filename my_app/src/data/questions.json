@@ -1,64 +1,530 @@
 {
   "categories": [
-      "Security",
-      "Management"
+      "Connaissance",
+      "Gestion matériel",
+      "Gestion logiciel",
+      "Gestion des données",
+      "Sécurité humaine",
+      "Efficacité opérationnelle"
   ],
   "data": [
       {
-          "description": "Utilisez-vous le wifi public ?",
+          "description": "Formez-vous régulièrement vos employés aux bonnes pratiques de sécurité informatique ?",
           "amelioration": [
-              "Avoir sa propre connexion privée 1",
-              "Utilisez un vpn 1"
+              "Organiser des formations mensuelles sur la cybersécurité",
+              "Distribuer des guides de bonnes pratiques",
+              "Mettre en place un test de phishing mensuel"
           ],
           "responses": [
               {
-                  "response": "oui",
-                  "points" : [
+                  "response": "oui, régulièrement",
+                  "points": [
                       {
-                          "category": "Security",
-                          "value": 5
+                          "category": "Connaissance",
+                          "value": 15
                       },
                       {
-                          "category":"Management",
-                          "value": -25
+                          "category": "Sécurité humaine",
+                          "value": 10
+                      },
+                      {
+                          "category": "Efficacité opérationnelle",
+                          "value": 7
                       }
                   ],
                   "showAmelioration": false
               },
               {
-                  "response": "non",
-                  "points" : [],
+                  "response": "non, mais nous prévoyons de le faire bientôt",
+                  "points": [
+                      {
+                          "category": "Connaissance",
+                          "value": 6
+                      },
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 4
+                      }
+                  ],
                   "showAmelioration": true
               }
           ]
       },
       {
-          "description": "Utilisez-vous un vpn ?",
+          "description": "Les appareils utilisés par vos employés sont-ils régulièrement mis à jour pour assurer leur sécurité ?",
           "amelioration": [
-              "Utiliser une connexion privée 2",
-              "Utilisez un vpn 2"
+              "Mettre en place des mises à jour automatiques",
+              "Vérifier les mises à jour manuellement tous les mois",
+              "Utiliser des outils de gestion des appareils mobiles (MDM)"
           ],
           "responses": [
               {
-                  "response": "oui",
-                  "points" : [
+                  "response": "oui, toutes les mises à jour sont automatiques",
+                  "points": [
                       {
-                          "category": "Security",
-                          "value": 5
+                          "category": "Gestion matériel",
+                          "value": 14
                       },
                       {
-                          "category":"Management",
-                          "value": -20
+                          "category": "Gestion logiciel",
+                          "value": 15
+                      },
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 9
                       }
                   ],
                   "showAmelioration": false
               },
               {
-                  "response": "non",
-                  "points" : [],
+                  "response": "non, les mises à jour sont rarement effectuées",
+                  "points": [
+                      {
+                          "category": "Gestion matériel",
+                          "value": -10
+                      },
+                      {
+                          "category": "Gestion logiciel",
+                          "value": -5
+                      },
+                      {
+                          "category": "Sécurité humaine",
+                          "value": -6
+                      },
+                      {
+                          "category": "Efficacité opérationnelle",
+                          "value": -4
+                      }
+                  ],
+                  "showAmelioration": true
+              },
+              {
+                  "response": "oui, mais nous vérifions manuellement tous les mois",
+                  "points": [
+                      {
+                          "category": "Gestion matériel",
+                          "value": 8
+                      },
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 5
+                      },
+                      {
+                          "category": "Gestion logiciel",
+                          "value": 8
+                      }
+                  ],
                   "showAmelioration": true
               }
           ]
-      }
+      },
+      {
+          "description": "Disposez-vous d'un système de gestion des licences logicielles pour éviter les logiciels non autorisés ?",
+          "amelioration": [
+              "Mettre en place un logiciel de gestion des licences",
+              "Former le personnel sur l'importance de respecter les licences logicielles",
+              "Effectuer des audits de licences tous les six mois"
+          ],
+          "responses": [
+              {
+                  "response": "oui, et nous avons un suivi strict des licences",
+                  "points": [
+                      {
+                          "category": "Gestion logiciel",
+                          "value": 18
+                      },
+                      {
+                          "category": "Gestion des données",
+                          "value": 6
+                      }
+                  ],
+                  "showAmelioration": false
+              },
+              {
+                  "response": "oui, mais nous n'avons pas de suivi détaillé",
+                  "points": [
+                      {
+                          "category": "Gestion logiciel",
+                          "value": 12
+                      },
+                      {
+                          "category": "Gestion des données",
+                          "value": 4
+                      }
+                  ],
+                  "showAmelioration": true
+              },
+              {
+                  "response": "non, nous n'avons pas de système en place",
+                  "points": [
+                      {
+                          "category": "Gestion logiciel",
+                          "value": -10
+                      },
+                      {
+                          "category": "Gestion des données",
+                          "value": -5
+                      },
+                      {
+                          "category": "Efficacité opérationnelle",
+                          "value": -7
+                      }
+                  ],
+                  "showAmelioration": true
+              },
+              {
+                  "response": "oui, mais nous effectuons des vérifications occasionnelles",
+                  "points": [
+                      {
+                          "category": "Gestion logiciel",
+                          "value": 8
+                      },
+                      {
+                          "category": "Gestion des données",
+                          "value": 3
+                      }
+                  ],
+                  "showAmelioration": true
+              }
+          ]
+      },
+      {
+          "description": "Avez-vous mis en place des mesures pour garantir la sécurité physique des locaux et des équipements ?",
+          "amelioration": [
+              "Installer des systèmes de surveillance et de contrôle d'accès",
+              "Former le personnel à la sécurité physique des locaux",
+              "Mettre en place une gestion des clés et des accès électroniques"
+          ],
+          "responses": [
+              {
+                  "response": "oui, des systèmes de surveillance et de contrôle d'accès sont en place",
+                  "points": [
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 18
+                      },
+                      {
+                          "category": "Gestion matériel",
+                          "value": 10
+                      }
+                  ],
+                  "showAmelioration": false
+              },
+              {
+                  "response": "oui, mais la surveillance est limitée à certains endroits",
+                  "points": [
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 12
+                      },
+                      {
+                          "category": "Gestion matériel",
+                          "value": 6
+                      }
+                  ],
+                  "showAmelioration": true
+              },
+              {
+                  "response": "non, nous n'avons pas de mesures en place",
+                  "points": [
+                      {
+                          "category": "Sécurité humaine",
+                          "value": -14
+                      },
+                      {
+                          "category": "Gestion matériel",
+                          "value": -7
+                      }
+                  ],
+                  "showAmelioration": true
+              },
+              {
+                  "response": "oui, mais nous avons seulement des contrôles d'accès manuels",
+                  "points": [
+                      {
+                          "category": "Sécurité humaine",
+                          "value": 10
+                      },
+                      {
+                          "category": "Gestion matériel",
+                          "value": 4
+                      }
+                  ],
+                  "showAmelioration": true
+              }
+          ]
+      },{
+        "description": "À quelle fréquence faites-vous des backups ?",
+        "amelioration": [
+          "Mettre en place des sauvegardes automatiques quotidiennes",
+          "Vérifier les sauvegardes régulièrement",
+          "Effectuer des tests de restauration des sauvegardes"
+        ],
+        "responses": [
+          {
+            "response": "quotidiennement, avec des sauvegardes automatiques",
+            "points": [
+              {
+                "category": "Gestion des données",
+                "value": 20
+              },
+              {
+                "category": "Efficacité opérationnelle",
+                "value": 15
+              }
+            ],
+            "showAmelioration": false
+          },
+          {
+            "response": "hebdomadairement, avec des sauvegardes manuelles",
+            "points": [
+              {
+                "category": "Gestion des données",
+                "value": 12
+              },
+              {
+                "category": "Efficacité opérationnelle",
+                "value": 8
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "mensuellement, avec des sauvegardes manuelles",
+            "points": [
+              {
+                "category": "Gestion des données",
+                "value": 5
+              },
+              {
+                "category": "Efficacité opérationnelle",
+                "value": 3
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "Je ne sais pas ce qu'est une backup",
+            "points": [
+              {
+                "category": "Connaissance",
+                "value": -10
+              },
+              {
+                "category": "Gestion des données",
+                "value": -5
+              }
+            ],
+            "showAmelioration": true
+          }
+        ]
+      },
+      {
+        "description": "Disposez-vous d'un antivirus à jour ?",
+        "amelioration": [
+          "Mettre à jour votre antivirus régulièrement",
+          "Vérifier les paramètres de sécurité de votre antivirus"
+        ],
+        "responses": [
+          {
+            "response": "oui, l'antivirus est toujours à jour",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 15
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 10
+              }
+            ],
+            "showAmelioration": false
+          },
+          {
+            "response": "oui, mais nous ne faisons pas de mise à jour automatique",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 8
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 5
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "non, l'antivirus n'est pas à jour",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": -10
+              },
+              {
+                "category": "Gestion matériel",
+                "value": -5
+              }
+            ],
+            "showAmelioration": true
+          }
+        ]
+      },
+      {
+        "description": "Les salariés peuvent-ils ramener leur matériel et le brancher sur les appareils connectés au réseau ?",
+        "amelioration": [
+          "Mettre en place des contrôles d'accès pour le matériel personnel",
+          "Former les employés aux risques de sécurité liés à l'utilisation de matériel personnel",
+          "Utiliser des solutions de sécurité pour limiter les risques liés aux appareils externes"
+        ],
+        "responses": [
+          {
+            "response": "oui, sans aucune restriction",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": -15
+              },
+              {
+                "category": "Gestion matériel",
+                "value": -10
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "oui, mais avec certaines restrictions (par exemple, validation préalable)",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 5
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 3
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "non, seuls les appareils d'entreprise peuvent être utilisés",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 15
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 10
+              }
+            ],
+            "showAmelioration": false
+          }
+        ]
+      },
+      {
+        "description": "L'entreprise restreint-elle l'accès au parc informatique pour les personnes extérieures ?",
+        "amelioration": [
+          "Mettre en place des contrôles d'accès physiques et logiques pour le parc informatique",
+          "Former les employés à reconnaître les risques d'accès non autorisé",
+          "Instaurer des procédures d'audit régulières sur l'accès au matériel sensible"
+        ],
+        "responses": [
+          {
+            "response": "oui, l'accès est strictement contrôlé et limité",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 18
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 12
+              }
+            ],
+            "showAmelioration": false
+          },
+          {
+            "response": "oui, mais il existe encore certaines exceptions (par exemple, pour les techniciens externes)",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 10
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 6
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "non, il n'y a pas de restrictions particulières pour les personnes extérieures",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": -10
+              },
+              {
+                "category": "Gestion matériel",
+                "value": -8
+              }
+            ],
+            "showAmelioration": true
+          }
+        ]
+      },
+      {
+        "description": "Les appareils connectés au réseau ont-ils tous les mêmes accès pour tout le monde ?",
+        "amelioration": [
+          "Mettre en place une gestion des accès différenciée selon les rôles",
+          "Utiliser des outils de gestion des droits d'accès pour assurer un contrôle granulaire",
+          "Former le personnel à la gestion sécurisée des droits d'accès"
+        ],
+        "responses": [
+          {
+            "response": "oui, tous les appareils ont les mêmes accès pour tout le monde",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": -15
+              },
+              {
+                "category": "Gestion matériel",
+                "value": -10
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "non, mais l'accès est limité par des rôles généraux (par exemple, employés vs administrateurs)",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 8
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 5
+              }
+            ],
+            "showAmelioration": true
+          },
+          {
+            "response": "non, les accès sont entièrement différenciés et contrôlés selon les rôles et les besoins",
+            "points": [
+              {
+                "category": "Sécurité humaine",
+                "value": 15
+              },
+              {
+                "category": "Gestion matériel",
+                "value": 12
+              }
+            ],
+            "showAmelioration": false
+          }
+        ]
+      }      
   ]
 }
