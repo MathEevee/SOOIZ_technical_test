@@ -1,0 +1,64 @@
+{
+  "categories": [
+      "Security",
+      "Management"
+  ],
+  "data": [
+      {
+          "description": "Utilisez-vous le wifi public ?",
+          "amelioration": [
+              "Avoir sa propre connexion privée 1",
+              "Utilisez un vpn 1"
+          ],
+          "responses": [
+              {
+                  "response": "oui",
+                  "points" : [
+                      {
+                          "category": "Security",
+                          "value": 5
+                      },
+                      {
+                          "category":"Management",
+                          "value": 10
+                      }
+                  ],
+                  "showAmelioration": false
+              },
+              {
+                  "response": "non",
+                  "points" : [],
+                  "showAmelioration": true
+              }
+          ]
+      },
+      {
+          "description": "Utilisez-vous un vpn ?",
+          "amelioration": [
+              "Utiliser une connexion privée 2",
+              "Utilisez un vpn 2"
+          ],
+          "responses": [
+              {
+                  "response": "oui",
+                  "points" : [
+                      {
+                          "category": "Security",
+                          "value": 5
+                      },
+                      {
+                          "category":"Management",
+                          "value": 10
+                      }
+                  ],
+                  "showAmelioration": false
+              },
+              {
+                  "response": "non",
+                  "points" : [],
+                  "showAmelioration": true
+              }
+          ]
+      }
+  ]
+}
